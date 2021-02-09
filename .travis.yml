@@ -1,3 +1,5 @@
+sudo:
+  - yes
 arch:
   - amd64
   - ppc64le
