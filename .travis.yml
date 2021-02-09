@@ -1,0 +1,13 @@
+arch:
+  - amd64
+  - ppc64le
+
+before_install:
+            - apt-get install libmpfr-dev libmpfr-doc libmpfr4
+            - apt-get install libgmp-dev
+            - apt-get install libmpc3 libmpc-dev flex
+            - ./contrib/download_prerequisites
+            - ./configure
+
+script:
+    - make
